@@ -1,16 +1,26 @@
 import { Title } from "@solidjs/meta";
+import { A } from "@solidjs/router";
 
 export default function Home() {
 	return (
-		<main>
-			<Title>Hello World</Title>
-			<h1>Hello world!</h1>
-			<p>
+		<main class="mx-auto p-4 text-center text-gray-700">
+			<Title>Home</Title>
+
+			<h1 class="max-6-xs my-16 text-6xl font-thin uppercase text-sky-700">Hello world!</h1>
+
+			<p class="mt-8">
 				Visit{" "}
-				<a href="https://start.solidjs.com" target="_blank">
-					start.solidjs.com
+				<a href="https://solidjs.com" target="_blank" class="text-sky-600 hover:underline">
+					solidjs.com
 				</a>{" "}
-				to learn how to build SolidStart apps.
+				to learn how to build Solid apps.
+			</p>
+			<p class="my-4">
+				<span>Home</span>
+				{" - "}
+				<A href="/about" class="text-sky-600 hover:underline">
+					About Page
+				</A>{" "}
 			</p>
 		</main>
 	);
