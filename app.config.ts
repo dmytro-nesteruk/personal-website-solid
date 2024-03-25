@@ -2,6 +2,9 @@ import { ViteCustomizableConfig, defineConfig } from "@solidjs/start/config";
 import paths from "vite-tsconfig-paths";
 
 export default defineConfig({
+	server: {
+		preset: "vercel",
+	},
 	vite({ router }) {
 		const plugins: ViteCustomizableConfig["plugins"] = [];
 
