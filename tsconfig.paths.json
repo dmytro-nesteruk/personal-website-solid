@@ -1,0 +1,11 @@
+{
+	"compilerOptions": {
+		"paths": {
+			"@routes/*": ["./src/routes/*"],
+			"@widgets/*": ["./src/widgets/*"],
+			"@features/*": ["./src/features/*"],
+			"@entities/*": ["./src/entities/*"],
+			"@shared/*": ["./src/shared/*"]
+		}
+	}
+}

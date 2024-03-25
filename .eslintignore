@@ -1,0 +1,21 @@
+.DS_Store
+node_modules
+/build
+/dist
+/package
+.env
+.env.*
+!.env.example
+/.eslintrc.json
+/.eslintrc.stage.json
+/.stylelint.json
+/.styleling.stage.json
+/.prettierrc
+/vite.config.ts
+/tsconfig.json
+/tsconfig.node.json
+
+# Ignore files for PNPM, NPM and YARN
+pnpm-lock.yaml
+package-lock.json
+yarn.lock

@@ -1,0 +1,27 @@
+{
+	"plugins": ["@trivago/prettier-plugin-sort-imports", "prettier-plugin-tailwindcss"],
+	"useTabs": true,
+	"singleQuote": false,
+	"semi": true,
+	"bracketSpacing": true,
+	"bracketSameLine": false,
+	"endOfLine": "lf",
+	"arrowParens": "always",
+	"trailingComma": "es5",
+	"tabWidth": 2,
+	"printWidth": 100,
+	"importOrder": [
+		"<THIRD_PARTY_MODULES>",
+		"^@app/(?!.*(sc|sa|c)ss)",
+		"^@routes/(?!.*(sc|sa|c)ss)",
+		"^@widgets/(?!.*(sc|sa|c)ss)",
+		"^@features/(?!.*(sc|sa|c)ss)",
+		"^@entities/(?!.*(sc|sa|c)ss)",
+		"^@shared/(?!.*(sc|sa|c)ss)",
+		"^../(?!.*(sc|sa|c)ss)",
+		"^./(?!.*(sc|sa|c)ss)",
+		"(.*).(sc|sa|c)ss$"
+	],
+	"importOrderSeparation": true,
+	"importOrderSortSpecifiers": true
+}

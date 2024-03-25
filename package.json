@@ -1,0 +1,59 @@
+{
+	"name": "personal-website-solid-start",
+	"version": "1.0.0",
+	"type": "module",
+	"scripts": {
+		"dev": "npx vinxi dev --port 3000 --host --open",
+		"build": "rm -rf .output && rm -rf .vinxi && npx vinxi build",
+		"start": "npx vinxi start",
+		"version": "npx vinxi version",
+		"check:build": "npx vinxi build",
+		"check:code-style": "npx eslint .",
+		"check:formatting": "npx prettier --check .",
+		"prepare": "husky"
+	},
+	"engineStrict": true,
+	"engines": {
+		"node": ">=18",
+		"pnpm": ">=8.6.10"
+	},
+	"config": {
+		"commit-message-validator": {
+			"_comment": "pattern can be Regex string or array of Regex string",
+			"pattern": "^(chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/[\\w-]{1,30}:s?.{1,150}$",
+			"errorMessage": "Invalid commit message format. It should contain (chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/(scope): message"
+		}
+	},
+	"lint-staged": {
+		"./**/*.{ts,tsx}": "bash -c 'npm run check:code-style'",
+		"./**/*.{ts,tsx,js,jsx,json,html,mdx,css,scss}": "bash -c 'npm run check:formatting'",
+		"*": [
+			"bash -c 'npm run check:build'"
+		]
+	},
+	"devDependencies": {
+		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@typescript-eslint/eslint-plugin": "^7.4.0",
+		"@typescript-eslint/parser": "^7.4.0",
+		"commit-message-validator": "^1.0.2",
+		"eslint": "^8.2.0",
+		"eslint-config": "^0.3.0",
+		"eslint-config-airbnb-base": "^15.0.0",
+		"eslint-config-prettier": "^9.1.0",
+		"eslint-plugin-import": "2.25.2",
+		"eslint-plugin-solid": "^0.13.2",
+		"husky": "^9.0.11",
+		"lint-staged": "^15.2.2",
+		"prettier": "^3.2.5",
+		"prettier-plugin-tailwindcss": "^0.5.12"
+	},
+	"dependencies": {
+		"@solidjs/meta": "^0.29.2",
+		"@solidjs/router": "^0.13.1",
+		"@solidjs/start": "^1.0.0-rc.0",
+		"solid-js": "^1.8.16",
+		"typescript": "^5.4.3",
+		"vinxi": "^0.3.10",
+		"vite-tsconfig-paths": "^4.3.2"
+	}
+}
