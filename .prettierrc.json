@@ -20,6 +20,7 @@
 		"^@shared/(?!.*(sc|sa|c)ss)",
 		"^../(?!.*(sc|sa|c)ss)",
 		"^./(?!.*(sc|sa|c)ss)",
+		"^@fontsource/*",
 		"(.*).(sc|sa|c)ss$"
 	],
 	"importOrderSeparation": true,

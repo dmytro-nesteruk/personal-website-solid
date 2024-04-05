@@ -5,6 +5,9 @@ settings:
   excludeLinksFromLockfile: false
 
 dependencies:
+  '@fontsource/fira-code':
+    specifier: ^5.0.17
+    version: 5.0.17
   '@solidjs/meta':
     specifier: ^0.29.2
     version: 0.29.3(solid-js@1.8.16)
@@ -813,6 +816,10 @@ packages:
   /@fastify/busboy@2.1.1:
     resolution: {integrity: sha512-vBZP4NlzfOlerQTnba4aqZoMhE/a9HY7HRqoOPaETQcSQuWEIyZMHGfVu6w9wGtGK5fED5qRs2DteVCjOH60sA==}
     engines: {node: '>=14'}
+    dev: false
+
+  /@fontsource/fira-code@5.0.17:
+    resolution: {integrity: sha512-Ai0qE5PWvm6ETny7ToAitwdhYtO3YrNIHoa0arPquXxpnlRSB+OsJfhKnfgDKm6WMmCnxKOfsIslbVw5PqQvvQ==}
     dev: false
 
   /@humanwhocodes/config-array@0.11.14:
