@@ -19,14 +19,14 @@
 		"pnpm": ">=8.6.10"
 	},
 	"config": {
-		"commit-message-validator": {
-			"_comment": "pattern can be Regex string or array of Regex string",
-			"pattern": "^(chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/[\\w-]{1,30}:s?.{1,150}$",
-			"errorMessage": "Invalid commit message format. It should contain (chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/(scope): message"
-		},
 		"commitizen": {
 			"path": "./node_modules/cz-conventional-changelog"
 		}
+	},
+	"commitlint": {
+		"extends": [
+			"@commitlint/config-conventional"
+		]
 	},
 	"lint-staged": {
 		"./**/*.{ts,tsx}": "bash -c 'npm run check:code-style'",
@@ -36,11 +36,12 @@
 		]
 	},
 	"devDependencies": {
+		"@commitlint/cli": "^19.2.1",
+		"@commitlint/config-conventional": "^19.1.0",
 		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
 		"@typescript-eslint/eslint-plugin": "^7.4.0",
 		"@typescript-eslint/parser": "^7.4.0",
 		"autoprefixer": "^10.4.19",
-		"commit-message-validator": "^1.0.2",
 		"commitizen": "^4.3.0",
 		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.2.0",
