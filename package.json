@@ -7,6 +7,7 @@
 		"build": "rm -rf .output && rm -rf .vinxi && npx vinxi build",
 		"start": "npx vinxi start",
 		"version": "npx vinxi version",
+		"release": "npx cz",
 		"check:build": "npx vinxi build",
 		"check:code-style": "npx eslint .",
 		"check:formatting": "npx prettier --check .",
@@ -22,6 +23,9 @@
 			"_comment": "pattern can be Regex string or array of Regex string",
 			"pattern": "^(chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/[\\w-]{1,30}:s?.{1,150}$",
 			"errorMessage": "Invalid commit message format. It should contain (chore|docs|feature|bugfix|hotfix|refactor|revert|style|improve|release)/(scope): message"
+		},
+		"commitizen": {
+			"path": "./node_modules/cz-conventional-changelog"
 		}
 	},
 	"lint-staged": {
@@ -37,6 +41,8 @@
 		"@typescript-eslint/parser": "^7.4.0",
 		"autoprefixer": "^10.4.19",
 		"commit-message-validator": "^1.0.2",
+		"commitizen": "^4.3.0",
+		"cz-conventional-changelog": "^3.3.0",
 		"eslint": "^8.2.0",
 		"eslint-config": "^0.3.0",
 		"eslint-config-airbnb-base": "^15.0.0",
