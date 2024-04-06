@@ -1,5 +1,6 @@
 import { defineConfig } from "@solidjs/start/config";
 import path from "node:path";
+import solidSvg from "vite-plugin-solid-svg";
 
 export default defineConfig({
 	server: {
@@ -7,6 +8,7 @@ export default defineConfig({
 	},
 	vite() {
 		return {
+			plugins: [solidSvg()],
 			resolve: {
 				alias: [
 					{ find: "@routes", replacement: path.resolve("src", "routes") },

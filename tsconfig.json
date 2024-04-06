@@ -12,7 +12,7 @@
 		"strict": true,
 		"noImplicitAny": true,
 		"noEmit": true,
-		"types": ["vinxi/client", "vite/client"],
+		"types": ["vinxi/client", "vite/client", "vite-plugin-solid-svg/types"],
 		"isolatedModules": true
 	}
 }
