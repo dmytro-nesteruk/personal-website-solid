@@ -1,23 +1,23 @@
-import { A, RouteSectionProps } from "@solidjs/router";
+import { Meta } from "@solidjs/meta";
+import { RouteSectionProps } from "@solidjs/router";
+
+import { LaptopHeader, MobileHeader } from "@shared/ui";
 
 const MainLayout = (props: RouteSectionProps) => (
-	<main class="mx-auto flex min-h-screen p-4 text-center text-gray-700 lg:p-16">
-		<div class="flex flex-grow flex-col rounded-lg border border-line-dark bg-primary-800">
-			<header>
-				<nav>
-					<ul>
-						<li>
-							<A href="/">Home</A>
-						</li>
-						<li>
-							<A href="/contacts">Contacts</A>
-						</li>
-					</ul>
-				</nav>
-			</header>
-			{props.children}
+	<>
+		<Meta
+			name="viewport"
+			content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"
+		/>
+		<div class="absolute bottom-0 left-0 right-0 top-0 text-gray-700">
+			<div class="absolute bottom-0 left-0 right-0 top-0 m-4 rounded-lg border border-line-dark bg-primary-800 lg:m-16">
+				<LaptopHeader class="hidden lg:block" />
+				<MobileHeader class="lg:hidden" />
+
+				<main class="scroll-container">{props.children}</main>
+			</div>
 		</div>
-	</main>
+	</>
 );
 
 export default MainLayout;
