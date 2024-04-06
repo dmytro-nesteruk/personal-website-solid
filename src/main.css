@@ -34,7 +34,7 @@ html {
 
 @layer components {
 	.scroll-container {
-		@apply absolute bottom-0 left-0 right-0 top-14;
+		@apply absolute bottom-[calc(3rem+1px)] left-0 right-0 top-14;
 	}
 }
 

@@ -92,6 +92,8 @@ export const MobileHeader: Component<MobileHeaderProps> = (props) => {
 						ref={setBurger}
 						class={twMerge("focus-styles flex items-center justify-center p-4")}
 						onClick={toggleMenu}
+						aria-label={isMenuOpened() ? "Close navigation menu" : "Open navigation menu"}
+						title={isMenuOpened() ? "Close navigation menu" : "Open navigation menu"}
 					>
 						<span
 							class={twMerge(
@@ -107,7 +109,7 @@ export const MobileHeader: Component<MobileHeaderProps> = (props) => {
 				{/* Menu */}
 				<div
 					class={twMerge(
-						"scroll-container top-[57px] z-10 rounded-lg bg-primary-800",
+						"scroll-container top-[57px] z-10 bg-primary-800",
 						isMenuOpened() ? "overflow-auto" : "bottom-full overflow-hidden"
 					)}
 				>
