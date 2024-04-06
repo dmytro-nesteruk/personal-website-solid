@@ -1,25 +1,21 @@
-import { ViteCustomizableConfig, defineConfig } from "@solidjs/start/config";
-import paths from "vite-tsconfig-paths";
+import { defineConfig } from "@solidjs/start/config";
+import path from "node:path";
 
 export default defineConfig({
 	server: {
 		preset: "vercel",
 	},
-	vite({ router }) {
-		const plugins: ViteCustomizableConfig["plugins"] = [];
-
-		switch (router) {
-			case "server":
-			case "client":
-				plugins.push(paths());
-				break;
-
-			default:
-				break;
-		}
-
+	vite() {
 		return {
-			plugins,
+			resolve: {
+				alias: [
+					{ find: "@routes", replacement: path.resolve("src", "routes") },
+					{ find: "@widgets", replacement: path.resolve("src", "widgets") },
+					{ find: "@features", replacement: path.resolve("src", "features") },
+					{ find: "@entities", replacement: path.resolve("src", "entities") },
+					{ find: "@shared", replacement: path.resolve("src", "shared") },
+				],
+			},
 		};
 	},
 });

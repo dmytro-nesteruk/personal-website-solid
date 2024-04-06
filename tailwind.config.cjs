@@ -33,6 +33,9 @@ module.exports = {
 				"gradient-purple": "#4D5BCE",
 				"gradient-teal": "#43D9AD",
 			},
+			borderWidth: {
+				3: "3px",
+			},
 		},
 	},
 	plugins: [],

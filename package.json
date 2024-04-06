@@ -36,6 +36,7 @@
 		"@commitlint/cli": "^19.2.1",
 		"@commitlint/config-conventional": "^19.1.0",
 		"@trivago/prettier-plugin-sort-imports": "^4.3.0",
+		"@types/lodash.throttle": "^4.1.9",
 		"@typescript-eslint/eslint-plugin": "^7.4.0",
 		"@typescript-eslint/parser": "^7.4.0",
 		"autoprefixer": "^10.4.19",
@@ -58,9 +59,11 @@
 		"@solidjs/meta": "^0.29.2",
 		"@solidjs/router": "^0.13.1",
 		"@solidjs/start": "^1.0.0-rc.0",
+		"lodash.throttle": "^4.1.1",
+		"solid-focus-trap": "^0.1.5",
 		"solid-js": "^1.8.16",
+		"tailwind-merge": "^2.2.2",
 		"typescript": "^5.4.3",
-		"vinxi": "^0.3.10",
-		"vite-tsconfig-paths": "^4.3.2"
+		"vinxi": "^0.3.10"
 	}
 }
