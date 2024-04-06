@@ -32,7 +32,7 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 				<ul class="flex flex-grow items-center justify-self-start">
 					<For each={links}>
 						{({ path, title }) => (
-							<li class="border-l border-line-dark last-of-type:border-r">
+							<li class="border-s border-line-dark last-of-type:border-e">
 								<A
 									href={path}
 									class={twMerge(
@@ -54,7 +54,7 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 				<A
 					href={routerBook.contacts.path}
 					class={twMerge(
-						"focus-styles flex items-center border-b-3 border-l border-l-line-dark px-8 py-4",
+						"focus-styles flex items-center border-b-3 border-s border-s-line-dark px-8 py-4",
 						hoverClasses,
 						location.pathname === routerBook.contacts.path
 							? "border-b-accent-orange text-white"

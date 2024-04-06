@@ -15,7 +15,7 @@ export const Footer = () => (
 			<ul class="flex flex-grow items-center">
 				<li>
 					<A
-						class="focus-styles group flex items-center justify-center border-l border-line-dark p-3"
+						class="focus-styles group flex items-center justify-center border-s border-line-dark p-3"
 						target="_blank"
 						rel="nofollow"
 						title="LinkedIn account"
@@ -28,7 +28,7 @@ export const Footer = () => (
 
 				<li>
 					<A
-						class="focus-styles group flex items-center justify-center border-l border-line-dark p-3 lg:border-r"
+						class="focus-styles group flex items-center justify-center border-s border-line-dark p-3 lg:border-e"
 						target="_blank"
 						rel="nofollow"
 						title="Upwork account"
@@ -41,7 +41,7 @@ export const Footer = () => (
 
 				<li class="flex justify-end lg:flex-grow">
 					<A
-						class="focus-styles group flex items-center justify-center gap-2 border-l border-line-dark p-3"
+						class="focus-styles group flex items-center justify-center gap-2 border-s border-line-dark p-3"
 						target="_blank"
 						rel="nofollow"
 						title="Github account"
