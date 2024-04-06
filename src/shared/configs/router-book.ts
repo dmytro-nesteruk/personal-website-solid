@@ -19,7 +19,7 @@ export const routerBook = {
 
 export const externalLinks = {
 	github: {
-		title: "_dmytro-nesteruk",
+		title: "dmytro-nesteruk",
 		path: "https://github.com/dmytro-nesteruk",
 	},
 	linkedIn: {
