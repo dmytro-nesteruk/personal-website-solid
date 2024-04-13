@@ -4,7 +4,7 @@ import solidSvg from "vite-plugin-solid-svg";
 
 export default defineConfig({
 	server: {
-		preset: "github-pages",
+		preset: "vercel",
 	},
 	vite() {
 		return {
