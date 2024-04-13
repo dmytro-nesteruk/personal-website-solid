@@ -6,6 +6,7 @@ import { Suspense } from "solid-js";
 import "@fontsource/fira-code/400.css";
 
 import "./main.css";
+import "@shared/styles/prism.css";
 
 export default function App() {
 	return (

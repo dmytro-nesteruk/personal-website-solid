@@ -7,11 +7,11 @@ module.exports = {
 				fira: ["Fira Code", "monospace"],
 			},
 			fontSize: {
-				headline: "62px",
-				subheadline: "32px",
-				body: "18px",
-				label: "16px",
-				code: "14px",
+				headline: ["3.875rem", 1.2],
+				subheadline: ["2rem", 1.12],
+				body: ["1.125rem", 1.12],
+				label: ["1rem", 1.12],
+				code: ["0.875rem", 1.12],
 			},
 			colors: {
 				primary: {
@@ -21,9 +21,9 @@ module.exports = {
 				},
 				black: "#010C15",
 				"light-grey": "#E5E9F0",
-				"secondary-grey": "#607B96",
+				"secondary-grey": "#8DAAC7", // #607B96
 				"secondary-teal": "#3C9D93",
-				"secondary-purple": "#4D5BCE",
+				"secondary-purple": "#6877E3", // #4D5BCE
 				"secondary-white": "#FFFFFF",
 				"accent-orange": "#FEA55F",
 				"accent-teal": "#43D9AD",

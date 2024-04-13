@@ -1,6 +1,11 @@
 // @refresh reload
 import { StartServer, createHandler } from "@solidjs/start/server";
 
+/* eslint-disable */
+console.log(import.meta.env);
+console.log(import.meta);
+/* eslint-enable */
+
 export default createHandler(() => (
 	<StartServer
 		document={({ assets, children, scripts }) => (
