@@ -1,0 +1,187 @@
+{
+  "_HttpStatusCode-DjTx85av.js": {
+    "file": "assets/HttpStatusCode-DjTx85av.js",
+    "name": "HttpStatusCode"
+  },
+  "_index-B84Ag-N4.js": {
+    "file": "assets/index-B84Ag-N4.js",
+    "name": "index",
+    "imports": [
+      "_web-V2g5aTUJ.js"
+    ]
+  },
+  "_routing-CQ4lycLV.js": {
+    "file": "assets/routing-CQ4lycLV.js",
+    "name": "routing",
+    "imports": [
+      "_web-V2g5aTUJ.js"
+    ]
+  },
+  "_server-runtime-DCOkYnfc.js": {
+    "file": "assets/server-runtime-DCOkYnfc.js",
+    "name": "server-runtime",
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_routing-CQ4lycLV.js"
+    ]
+  },
+  "_web-V2g5aTUJ.js": {
+    "file": "assets/web-V2g5aTUJ.js",
+    "name": "web"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-400-normal.woff": {
+    "file": "assets/fira-code-cyrillic-400-normal-DJuFNr2d.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-400-normal.woff2": {
+    "file": "assets/fira-code-cyrillic-400-normal-CISwbqxD.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-ext-400-normal.woff": {
+    "file": "assets/fira-code-cyrillic-ext-400-normal-DQ4J9vT3.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-ext-400-normal.woff2": {
+    "file": "assets/fira-code-cyrillic-ext-400-normal-D7WlbQ7d.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-cyrillic-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-400-normal.woff": {
+    "file": "assets/fira-code-greek-400-normal-vzvDRywA.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-400-normal.woff2": {
+    "file": "assets/fira-code-greek-400-normal--vxxe_do.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-ext-400-normal.woff": {
+    "file": "assets/fira-code-greek-ext-400-normal-B3Ce951f.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-ext-400-normal.woff2": {
+    "file": "assets/fira-code-greek-ext-400-normal-29pKeDY_.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-greek-ext-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-400-normal.woff": {
+    "file": "assets/fira-code-latin-400-normal-PFR0Tj-d.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-400-normal.woff2": {
+    "file": "assets/fira-code-latin-400-normal-BzypJxJk.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-400-normal.woff2"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-ext-400-normal.woff": {
+    "file": "assets/fira-code-latin-ext-400-normal-CVnm3Zzm.woff",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-ext-400-normal.woff"
+  },
+  "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-ext-400-normal.woff2": {
+    "file": "assets/fira-code-latin-ext-400-normal-D8LVdQHX.woff2",
+    "src": "node_modules/.pnpm/@fontsource+fira-code@5.0.17/node_modules/@fontsource/fira-code/files/fira-code-latin-ext-400-normal.woff2"
+  },
+  "src/routes/(home).tsx?pick=default&pick=$css": {
+    "file": "assets/(home)-Du-_TaK2.js",
+    "name": "(home)",
+    "src": "src/routes/(home).tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_routing-CQ4lycLV.js"
+    ]
+  },
+  "src/routes/(home)/about.tsx?pick=default&pick=$css": {
+    "file": "assets/about-DxDAmmgj.js",
+    "name": "about",
+    "src": "src/routes/(home)/about.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_index-B84Ag-N4.js"
+    ]
+  },
+  "src/routes/(home)/contacts.tsx?pick=default&pick=$css": {
+    "file": "assets/contacts-C4nR7J3A.js",
+    "name": "contacts",
+    "src": "src/routes/(home)/contacts.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_index-B84Ag-N4.js"
+    ]
+  },
+  "src/routes/(home)/index.tsx?pick=default&pick=$css": {
+    "file": "assets/index-DHJGlmKA.js",
+    "name": "index",
+    "src": "src/routes/(home)/index.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_server-runtime-DCOkYnfc.js",
+      "_index-B84Ag-N4.js",
+      "_routing-CQ4lycLV.js"
+    ]
+  },
+  "src/routes/(home)/projects.tsx?pick=default&pick=$css": {
+    "file": "assets/projects-BJc5nw8O.js",
+    "name": "projects",
+    "src": "src/routes/(home)/projects.tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_index-B84Ag-N4.js"
+    ]
+  },
+  "src/routes/[...404].tsx?pick=default&pick=$css": {
+    "file": "assets/_...404_-DEFwfMI_.js",
+    "name": "_...404_",
+    "src": "src/routes/[...404].tsx?pick=default&pick=$css",
+    "isEntry": true,
+    "isDynamicEntry": true,
+    "imports": [
+      "_web-V2g5aTUJ.js",
+      "_index-B84Ag-N4.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ]
+  },
+  "virtual:#vinxi/handler/client": {
+    "file": "assets/client-DoMHs5_X.js",
+    "name": "client",
+    "src": "virtual:#vinxi/handler/client",
+    "isEntry": true,
+    "imports": [
+      "_index-B84Ag-N4.js",
+      "_web-V2g5aTUJ.js",
+      "_server-runtime-DCOkYnfc.js",
+      "_routing-CQ4lycLV.js",
+      "_HttpStatusCode-DjTx85av.js"
+    ],
+    "dynamicImports": [
+      "src/routes/(home).tsx?pick=default&pick=$css",
+      "src/routes/[...404].tsx?pick=default&pick=$css",
+      "src/routes/(home)/about.tsx?pick=default&pick=$css",
+      "src/routes/(home)/contacts.tsx?pick=default&pick=$css",
+      "src/routes/(home)/index.tsx?pick=default&pick=$css",
+      "src/routes/(home)/projects.tsx?pick=default&pick=$css"
+    ],
+    "css": [
+      "assets/client-wQ0ShDjj.css"
+    ],
+    "assets": [
+      "assets/fira-code-cyrillic-ext-400-normal-D7WlbQ7d.woff2",
+      "assets/fira-code-cyrillic-ext-400-normal-DQ4J9vT3.woff",
+      "assets/fira-code-cyrillic-400-normal-CISwbqxD.woff2",
+      "assets/fira-code-cyrillic-400-normal-DJuFNr2d.woff",
+      "assets/fira-code-greek-ext-400-normal-29pKeDY_.woff2",
+      "assets/fira-code-greek-ext-400-normal-B3Ce951f.woff",
+      "assets/fira-code-greek-400-normal--vxxe_do.woff2",
+      "assets/fira-code-greek-400-normal-vzvDRywA.woff",
+      "assets/fira-code-latin-ext-400-normal-D8LVdQHX.woff2",
+      "assets/fira-code-latin-ext-400-normal-CVnm3Zzm.woff",
+      "assets/fira-code-latin-400-normal-BzypJxJk.woff2",
+      "assets/fira-code-latin-400-normal-PFR0Tj-d.woff"
+    ]
+  }
+}

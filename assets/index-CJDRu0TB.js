@@ -1,0 +1,1 @@
+const h=n=>{if(typeof n>"u")return;const e=/\[.*?\]\(https?:\/\/.*?\)/,o=/\[.*?\]/,s=/\(https?:\/\/.*?\)/;n.hooks.add("wrap",t=>{const c=t;if(e.exec(t.content)){const a=t.content.match(o)?.[0].replace(/[\[\]]/g,'"')||"",r=t.content.match(s)?.[0].replace(/[\(\)]/g,"")||"";c.tag="a",c.attributes.href=r,c.content=a}})};export{h as prismHighlightURL};
