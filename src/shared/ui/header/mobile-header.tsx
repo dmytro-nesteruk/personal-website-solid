@@ -1,4 +1,4 @@
-import { A, useLocation } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import throttle from "lodash.throttle";
 import createFocusTrap from "solid-focus-trap";
 import { Component, For, createSignal, onCleanup, onMount } from "solid-js";
@@ -79,13 +79,13 @@ export const MobileHeader: Component<MobileHeaderProps> = (props) => {
 		<header class={twMerge("flex flex-col", props.class)} ref={setRef}>
 			<nav class="flex flex-col text-secondary-grey">
 				<div class="flex flex-grow items-center justify-between border-b border-line-dark">
-					<A
+					<a
 						href={routerBook.home.path}
 						class={twMerge("focus-styles flex items-center  px-5 py-4")}
 						onClick={closeMenu}
 					>
 						dmytro-nesteruk
-					</A>
+					</a>
 
 					{/* Burger */}
 					<button
@@ -122,7 +122,7 @@ export const MobileHeader: Component<MobileHeaderProps> = (props) => {
 						<For each={mobileLinks}>
 							{({ path, title }) => (
 								<li>
-									<A
+									<a
 										href={path}
 										class={twMerge(
 											"focus-styles flex items-center border-b border-line-dark px-5 py-4",
@@ -131,7 +131,7 @@ export const MobileHeader: Component<MobileHeaderProps> = (props) => {
 										onClick={closeMenu}
 									>
 										{title}
-									</A>
+									</a>
 								</li>
 							)}
 						</For>

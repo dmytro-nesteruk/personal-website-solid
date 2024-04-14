@@ -1,4 +1,4 @@
-import { A, useLocation } from "@solidjs/router";
+import { useLocation } from "@solidjs/router";
 import { Component, For } from "solid-js";
 import { twMerge } from "tailwind-merge";
 
@@ -20,12 +20,12 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 			<nav class="flex items-center justify-between border-b border-line-dark text-secondary-grey">
 				{/* Left side */}
 				<div class="flex items-center justify-between">
-					<A
+					<a
 						href={routerBook.home.path}
 						class={twMerge("focus-styles flex items-center px-8 py-4", hoverClasses)}
 					>
 						dmytro-nesteruk
-					</A>
+					</a>
 				</div>
 
 				{/* Center */}
@@ -33,7 +33,7 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 					<For each={links}>
 						{({ path, title }) => (
 							<li class="border-s border-line-dark last-of-type:border-e">
-								<A
+								<a
 									href={path}
 									class={twMerge(
 										"focus-styles flex items-center border-b-3 px-8 py-4",
@@ -44,14 +44,14 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 									)}
 								>
 									{title}
-								</A>
+								</a>
 							</li>
 						)}
 					</For>
 				</ul>
 
 				{/* Right side */}
-				<A
+				<a
 					href={routerBook.contacts.path}
 					class={twMerge(
 						"focus-styles flex items-center border-b-3 border-s border-s-line-dark px-8 py-4",
@@ -62,7 +62,7 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 					)}
 				>
 					{routerBook.contacts.title}
-				</A>
+				</a>
 			</nav>
 		</header>
 	);

@@ -1,5 +1,3 @@
-import { A } from "@solidjs/router";
-
 import { externalLinks } from "@shared/configs";
 import GithubIcon from "@shared/ui/icons/github.svg?component-solid";
 import LinkedInIcon from "@shared/ui/icons/linked-in.svg?component-solid";
@@ -14,7 +12,7 @@ export const Footer = () => (
 		<nav class="flex lg:flex-grow">
 			<ul class="flex flex-grow items-center">
 				<li>
-					<A
+					<a
 						class="focus-styles group flex items-center justify-center border-s border-line-dark p-3"
 						target="_blank"
 						rel="nofollow"
@@ -23,11 +21,11 @@ export const Footer = () => (
 						href={externalLinks.linkedIn.path}
 					>
 						<LinkedInIcon class="opacity-40 transition-opacity group-hover:opacity-100" />
-					</A>
+					</a>
 				</li>
 
 				<li>
-					<A
+					<a
 						class="focus-styles group flex items-center justify-center border-s border-line-dark p-3 lg:border-e"
 						target="_blank"
 						rel="nofollow"
@@ -36,11 +34,11 @@ export const Footer = () => (
 						href={externalLinks.upwork.path}
 					>
 						<UpworkIcon class="opacity-40 transition-opacity group-hover:opacity-100" />
-					</A>
+					</a>
 				</li>
 
 				<li class="flex justify-end lg:flex-grow">
-					<A
+					<a
 						class="focus-styles group flex items-center justify-center gap-2 border-s border-line-dark p-3"
 						target="_blank"
 						rel="nofollow"
@@ -52,7 +50,7 @@ export const Footer = () => (
 							@{externalLinks.github.title}
 						</span>
 						<GithubIcon class="opacity-40 transition-opacity group-hover:opacity-100" />
-					</A>
+					</a>
 				</li>
 			</ul>
 		</nav>
