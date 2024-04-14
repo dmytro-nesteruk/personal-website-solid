@@ -55,12 +55,18 @@ const Index = () => {
 				{/* Open Graph */}
 				<Meta property="og:url" content={meta.og.url} />
 				<Meta property="og:type" content={meta.og.type} />
+				<Meta property="og:title" content={meta.title} />
+				<Meta property="og:description" content={meta.description} />
 				<Meta property="og:image" content={meta.og.image.url} />
 				<Meta property="og:image:alt" content={meta.og.image.alt} />
 				<Meta property="og:image:type" content={meta.og.image.type} />
 				<Meta property="og:image:width" content={meta.og.image.width} />
 				<Meta property="og:image:height" content={meta.og.image.height} />
 
+				{/* Robots */}
+				<Meta name="robots" content="index,follow" />
+
+				{/* Canonical */}
 				<Link rel="canonical" href={meta.canonical} />
 			</>
 
