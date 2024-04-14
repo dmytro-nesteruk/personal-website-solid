@@ -46,7 +46,7 @@ export const Footer = () => (
 						aria-label="Github account"
 						href={externalLinks.github.path}
 					>
-						<span class="hidden opacity-40 transition-opacity group-hover:opacity-100 lg:flex">
+						<span class="hidden transition-opacity group-hover:opacity-100 lg:flex">
 							@{externalLinks.github.title}
 						</span>
 						<GithubIcon class="opacity-40 transition-opacity group-hover:opacity-100" />

@@ -15,6 +15,14 @@ const hoverClasses = "transition-opacity hover:underline hover:underline-offset-
 export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 	const location = useLocation();
 
+	const isActiveRoute = (url: string) => {
+		if (location.pathname === "/" && url === "/") return true;
+
+		if (location.pathname !== "/" && url !== "/") return location.pathname.includes(url);
+
+		return false;
+	};
+
 	return (
 		<header class={twMerge("flex flex-col", props.class)}>
 			<nav class="flex items-center justify-between border-b border-line-dark text-secondary-grey">
@@ -38,7 +46,7 @@ export const LaptopHeader: Component<LaptopHeaderProps> = (props) => {
 									class={twMerge(
 										"focus-styles flex items-center border-b-3 px-8 py-4",
 										hoverClasses,
-										location.pathname === path
+										isActiveRoute(path)
 											? "border-b-accent-orange text-white"
 											: "border-b-transparent"
 									)}
