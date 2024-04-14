@@ -6,6 +6,20 @@ export const routerBook = {
 	about: {
 		title: "_about-me",
 		path: "/about",
+		children: {
+			bio: {
+				title: "_bio",
+				path: "/about/bio",
+			},
+			interests: {
+				title: "_interests",
+				path: "/about/interests",
+			},
+			education: {
+				title: "_education",
+				path: "/about/education",
+			},
+		},
 	},
 	projects: {
 		title: "_projects",
