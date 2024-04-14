@@ -44,7 +44,9 @@ const About = () => (
 			<Link rel="canonical" href={meta.canonical} />
 		</>
 
-		<section>Index</section>
+		<section>
+			<h1 class="text-light-grey">Index</h1>
+		</section>
 	</>
 );
 

@@ -18,10 +18,11 @@ export const ThreeView: Component<ThreeViewProps> = (props) => (
 						<div
 							tabIndex={0}
 							role="button"
-							class="focus-styles flex w-full flex-grow items-center gap-1"
+							class="focus-styles flex w-full flex-grow items-center gap-1 py-1 md:py-0"
 							onClick={() => props.onFolderClick(folder.id)}
 						>
 							<ChevronIcon
+								aria-hidden
 								class={twMerge(
 									"inline-block h-6 w-6 origin-center rotate-0 text-secondary-grey transition-transform",
 									folder.opened && "rotate-90"
@@ -49,7 +50,7 @@ export const ThreeView: Component<ThreeViewProps> = (props) => (
 											<A
 												href={file.url}
 												activeClass="text-white underline underline-offset-4"
-												class="focus-styles flex items-center gap-2 text-secondary-grey transition-colors hover:text-white hover:underline hover:underline-offset-4"
+												class="focus-styles flex items-center gap-2 py-1 text-secondary-grey transition-colors hover:text-white hover:underline hover:underline-offset-4 md:py-0"
 											>
 												<file.icon class={file.iconClass} />
 												<span class="overflow-hidden text-ellipsis">{file.title}</span>

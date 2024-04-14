@@ -44,7 +44,9 @@ const Bio = () => (
 			<Link rel="canonical" href={meta.canonical} />
 		</>
 
-		<section>education</section>
+		<section>
+			<h1 class="text-light-grey">education</h1>
+		</section>
 	</>
 );
 
